@@ -20,7 +20,7 @@ let avatar = document.getElementById("avatar");
 let bar = document.getElementById("bar");
 
 let music1 = document.getElementById("music1");
-
+let videos = document.querySelectorAll("video");
 let popup1 = document.getElementById("popup1");
 let popup2 = document.getElementById("popup2");
 
@@ -29,6 +29,15 @@ let close1 = document.getElementById("close1");
 
 let open2 = document.getElementById("pesan2");
 let close2 = document.getElementById("close2");
+
+/* INTRO */
+function startWebsite(){
+
+document.getElementById("intro").style.display="none";
+document.getElementById("music1").play();
+document.querySelector("video").play();
+}
+
 
 /* TYPING EFFECT */
 
@@ -55,7 +64,7 @@ bar.style.transition = "none";
 bar.style.width = "0%";
 
 setTimeout(()=>{
-bar.style.transition = "width 4.8s";
+bar.style.transition = "width 5s";
 bar.style.width = "100%";
 },50);
 
@@ -73,7 +82,6 @@ if(index < texts.length - 1){
 open1.onclick = function(){
 
 popup1.classList.add("active");
-music1.play();
 index = 0;
 slide();
 autoslide = setInterval(slide,5000);
