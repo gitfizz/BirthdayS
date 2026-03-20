@@ -5,6 +5,10 @@ box-sizing:border-box;
 font-family:sans-serif;
 }
 
+body.no-scroll{
+    overflow:hidden;
+}
+
 #intro{
 position:fixed;
 top:0;
@@ -148,20 +152,24 @@ transition:0.4s;
 
 /* BOX POPUP */
 .popup-content{
-position:absolute;
+position:relative;
 background:#f200ff;
 padding:40px;
 border-radius:15px;
 text-align:center;
+width:90%;
+max-width:400px;
+max-height:80vh;
+overflow-y:auto;
 transform:scale(0.7);
 transition:0.4s;
+scrollbar-width:none;
+-webkit-overflow-scrolling: touch;
 }
 
 .popup-text{
-    position:center;
     font-size: 16px;
     font-family:georgia;
-    text-justify: fixed;
     background:white;
     padding: 35px;
     border-radius:15px;
