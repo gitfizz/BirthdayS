@@ -23,12 +23,10 @@ let music1 = document.getElementById("music1");
 let videos = document.querySelectorAll("video");
 let popup1 = document.getElementById("popup1");
 let popup2 = document.getElementById("popup2");
-
 let open1 = document.getElementById("pesan1");
-let close1 = document.getElementById("close1");
-
-let open2 = document.getElementById("pesan2");
 let close2 = document.getElementById("close2");
+let open2 = document.getElementById("pesan2");
+
 
 /* INTRO */
 function startWebsite(){
@@ -80,23 +78,20 @@ if(index < texts.length - 1){
 }
 
 open1.onclick = function(){
-
 popup1.classList.add("active");
+document.body.classList.add("no-scroll");
+document.body.style.touchAction = "none";
 index = 0;
 slide();
 autoslide = setInterval(slide,5000);
-}
-
-close1.onclick = function(){
-popup1.classList.remove("active");
-clearInterval(autoslide);
-clearInterval(typingInterval);
 }
 
 open2.onclick = function(){
 
 popup2.classList.add("active");
 popup1.classList.remove("active");
+document.body.classList.add("no-scroll");
+document.body.style.touchAction = "none";
 clearInterval(autoslide);
 clearInterval(typingInterval);
 
@@ -104,6 +99,8 @@ clearInterval(typingInterval);
 
 close2.onclick = function(){
 popup2.classList.remove("active");
+document.body.classList.remove("no-scroll");
+document.body.style.touchAction = "auto";
 }
 
 
