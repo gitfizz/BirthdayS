@@ -1,5 +1,5 @@
 let texts = [
-"Barakallah fii 'umrik Sarahh! 🎂🎈🎉🥳🥰",
+"Barakallah fii 'umrik! 🎂🎈🎉🥳🥰",
 "Selamat hari raya juga 🌙🕋🕌",
 "Minal aidin wal faizin, Hafiz minta maaf yaa kalo ada salah 🙏🏻🙏🏻😭😭",
 "Proud Of You💖🥰"
